@@ -34,7 +34,7 @@ main{
     background-color: var(--main-color);
     padding: 70px;
 }
-h1,h2{
+h1,h2,caption{
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -47,7 +47,7 @@ p,li{
     max-width: 800px;
     font-weight: 200;
 }
-h2{
+h2, caption{
     font-size: var(--h2cp-font);
 }
 li{
@@ -78,4 +78,58 @@ footer p{
 .socials li:hover{
     transform: translateY(-5px) scale(1.2);
 }
+
+/* reservation styles */
+
+table th,td{
+    text-align: left;
+    padding:10px 0 0 30px;
+    border: none;
+}
+
+input{
+    margin-left: 10px;
+}
+.inputfield,textarea{
+    background-color: var(--bg-color);
+    padding: 6px 10px;
+    border: 1px solid var(--b-color);
+    caret-color: var(--ac-put-color);
+}
+input[type="radio"]{
+    accent-color: var(--ac-put-color);
+    margin:5px;
+}
+fieldset{
+    max-width: 450px;
+}
+fieldset .rooms{
+    margin: 10px;
+}
+textarea{
+    width: 260px;
+}
+::placeholder{
+    font-size:16px;
+    font-weight: 200;
+}
+.inputfield:hover,textarea:hover{
+    border-color: var(--ac-put-color);
+}
+input[type="date"]{
+    padding: 5px;
+}
+button{
+    padding:10px;
+    border: none;
+    background-color: rgb(64, 15, 45);
+    font-size: 16px;
+    font-weight: 200;
+}
+button:hover{
+    background-color: rgb(142, 57, 108);
+}
+
+
+
 
